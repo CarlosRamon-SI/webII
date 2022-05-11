@@ -20,8 +20,7 @@ public class Tarefa {
   @Column(name = "finalizacao")
   private boolean finalizado;
   @Temporal(TemporalType.DATE)
-  @Column(name="data_finalizacao",
-   nullable = true)
+  @Column(name = "data_finalizacao", nullable = true)
   private Calendar dataFinalizacao;
 
   @ManyToOne(cascade = CascadeType.ALL)
@@ -66,6 +65,5 @@ public class Tarefa {
   public void setDisciplina(Disciplina disciplina) {
     this.disciplina = disciplina;
   }
-
 
 }
